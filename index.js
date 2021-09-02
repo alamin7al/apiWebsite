@@ -11,7 +11,7 @@ searchButton.addEventListener('click', function () {
 })
 //bopks search
 const displayResult = books => {
-    const api = books.docs.slice(0, 15)
+    const api = books.docs.slice(0, 10)
     const displayDetails = document.getElementById('displayDetails')
     displayDetails.textContent = ''
     api.forEach(book => {
@@ -24,7 +24,6 @@ const displayResult = books => {
     <h5 class="card-title">${book.author_name}</h5>
     <h5 class="card-title"> ${book.publisher}</h5>
     <h5 class="card-title">${book.publish_year}</h5>
-    <p class="card-text">${book.title}</p>
     </div>
     </div>
 `
