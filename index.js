@@ -18,11 +18,10 @@ const displayResult = books => {
         const div = document.createElement('div')
         div.classList.add('col')
         div.innerHTML = `
-    <div class="card">
+    <div class="card h-100">
         <img src="https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" class="card-img-top" alt="...">
     <div class="card-body">
     <h5 class="card-title">${book.author_name}</h5>
-    <h5 class="card-title"> ${book.publisher}</h5>
     <h5 class="card-title">${book.publish_year}</h5>
     </div>
     </div>
@@ -48,7 +47,6 @@ const displayResult = books => {
         div.innerHTML = `Result Found <h3>${showResult}</h3> `;
         displySearchResult.appendChild(div)
     };
-
 }
 
 
