@@ -29,7 +29,7 @@ const displayResult = books => {
 `
         displayDetails.appendChild(div)
     })
-// books result
+    // books result
     const showResult = books.numFound
     if (showResult === 0) {
         const displySearchResult = document.getElementById("show-result");
@@ -45,7 +45,7 @@ const displayResult = books => {
         displySearchResult.textContent = "";
         const div = document.createElement("div");
         div.classList.add("h2")
-        div.innerHTML = `Ressult Found <h3>${showResult}</h3> `;
+        div.innerHTML = `Result Found <h3>${showResult}</h3> `;
         displySearchResult.appendChild(div)
     };
 
